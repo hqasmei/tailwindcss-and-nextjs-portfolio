@@ -17,7 +17,9 @@ const HeroSection = () => {
           />
         </div>
         <div className="mt-4 md:w-3/5">
-          <h1 className="text-4xl font-bold  md:text-6xl">Hi, I'm Hosna!</h1>
+          <h1 className="text-4xl font-bold  md:text-6xl">
+            Hi, I&#39;m Hosna!
+          </h1>
           <p className="text-lg mt-4 mb-6 md:pr-28 md:text-xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
