@@ -1,8 +1,7 @@
 "use client" // this is a client component
 import React from "react"
 import { useState } from "react"
-
-import Link from "next/link"
+import { Link } from "react-scroll/modules"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
@@ -10,21 +9,21 @@ import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 interface NavItem {
   label: string
-  id?: string
+  page: string
 }
 
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
-    id: "#home",
+    page: "home",
   },
   {
     label: "About",
-    id: "#about",
+    page: "about",
   },
   {
     label: "Projects",
-    id: "#projects",
+    page: "projects",
   },
 ]
 
@@ -38,7 +37,7 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="#home">
+            <Link to="home">
               <div className="container flex items-center space-x-2">
                 <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
               </div>
@@ -60,21 +59,24 @@ export default function Navbar() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className=" items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
                 return (
-                  <a
+                  <Link
                     key={idx}
+                    to={item.page}
                     className={
-                      pathname == `${item.id}`
-                        ? "font-bold"
-                        : "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
                     }
-                    href={item.id}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 )
               })}
               {currentTheme === "dark" ? (
