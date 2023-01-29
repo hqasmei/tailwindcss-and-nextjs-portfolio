@@ -6,7 +6,7 @@ import Image from "next/image"
 const HeroSection = () => {
   return (
     <section id="home" className="-top-12">
-      <div className="flex flex-col-reverse text-center items-center justify-center my-24 md:flex-row md:text-left">
+      <div className="flex flex-col text-center items-center justify-center my-24 md:flex-row md:text-left">
         <div className="md:w-1/2">
           <Image
             src="/headshot.png"

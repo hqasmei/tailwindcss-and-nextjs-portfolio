@@ -68,7 +68,7 @@ export default function Navbar() {
                     className={
                       pathname == `${item.id}`
                         ? "font-bold"
-                        : "text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                        : "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
                     }
                     href={item.id}
                     onClick={() => setNavbar(!navbar)}
