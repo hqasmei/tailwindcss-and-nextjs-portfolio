@@ -13,6 +13,8 @@ const skills = [
     {skill:"React"},
     {skill:"ReactNative"},
     {skill:"Sanity"},
+    {skill:"Photoshop"},
+    
 
 ]
 
