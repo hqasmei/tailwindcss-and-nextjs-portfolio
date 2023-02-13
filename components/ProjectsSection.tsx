@@ -33,6 +33,14 @@ const projects = [
     link: "https://yariga-dashboard.netlify.app/",
     github: "https://github.com/dewedeth/refine_dashboard",
    },
+   {
+    name: "ebay-clone-thirdweb",
+    description: "A sample  EBAY Clone UI & Auth (Next.js 13, TypeScript, React.js, Tailwind, Thirdweb)",
+    image: "/ebay-clone.png",
+    link: "https://ebay-clone-thirdweb-olive.vercel.app",
+    github: "https://github.com/dewedeth/ebay-clone-thirdweb",
+   },
+   
   
 ]
 
