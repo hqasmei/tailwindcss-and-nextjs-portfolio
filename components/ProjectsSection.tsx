@@ -26,6 +26,13 @@ const projects = [
     link: "https://sveltekit-commerce-seven.vercel.app/",
     github: "https://github.com/dewedeth/sveltekit-commerce",
    },
+   {
+    name: "yariga-dashboard",
+    description: "A sample properties dashboard Full Stack MERN Application With CRUD, Auth, and Charts Using Refine",
+    image: "/yariga-dashboard.png",
+    link: "https://yariga-dashboard.netlify.app/",
+    github: "https://github.com/dewedeth/refine_dashboard",
+   },
   
 ]
 
