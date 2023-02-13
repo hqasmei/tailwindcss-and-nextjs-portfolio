@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const skills = [
     {skill:"HTML"},
-    {skill:"CSS"},
+    {skill:"tailwindCSS"},
     {skill:"JavaScript"},
     {skill:"TypeScript"},
     {skill:"CRM"},
