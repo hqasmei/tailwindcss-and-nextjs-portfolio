@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import SlideUp from './SlideUp';
 
 const projects = [
   {
@@ -39,7 +40,8 @@ const ProjectsSection = () => {
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <div className='flex flex-col md:flex-row md:space-x-12'>
+              <SlideUp offset='-300px 0px -300px 0px'>
+              <div className='flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12'>
                 <div className='mt-8 md:w-1/2'>
                   <Link href={project.link} target="_blank">
                   <Image 
@@ -51,7 +53,7 @@ const ProjectsSection = () => {
                   />
                   </Link>
                 </div>
-                <div className='mt-12 md:w-1/2'>
+                <div className='mt-8 md:w-1/2'>
                   <h1 className='text-4xl font-bold mb-6'>{project.name}</h1>
                   <p className='text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400'>{project.description}</p>
                   <div className='flex flex-row align-bottom space-x-4'>
@@ -70,6 +72,7 @@ const ProjectsSection = () => {
                   </div>
                 </div>
               </div>
+              </SlideUp>
             </div>
           )
         })}
