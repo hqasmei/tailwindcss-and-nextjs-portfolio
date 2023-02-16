@@ -18,7 +18,7 @@ function Contact({}: Props) {
         window.location.href = `mailto:yousefabdelkhaleq@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
     };
   return (
-    <section className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center' id='contact'>
+    <section className='flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center' id='contact'>
        <div className='flex flex-col'>
        <h1 className='text-center font-bold text-4xl'>Contact Me
       <hr className='w-6 h-1 mx-auto my-4 bg-purple-500 border-0 rounded'></hr>
