@@ -19,35 +19,35 @@ function Contact({}: Props) {
     };
   return (
     <section className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center' id='contact'>
-       <div className='flex flex-col space-y-28'>
+       <div className='flex flex-col'>
        <h1 className='text-center font-bold text-4xl'>Contact Me
       <hr className='w-6 h-1 mx-auto my-4 bg-purple-500 border-0 rounded'></hr>
       </h1>
-      <div className='flex flex-col space-y-10'>
-            <h4 className='text-4xl font-semibold text-center'>
+      <div className='flex flex-col space-y-8'>
+            <h1 className='text-2xl font-semibold text-center'>
                 Want to know more?,{" "}
                 <span className='decoration-[#AB0AF7]/50 underline'>Lets Talk!.</span>
-            </h4>
+            </h1>
 
             <div className='space-y-10'>
-                <div className='flex items-center space-x-5 justify-center'>
+                <div className='flex items-center space-x-3 justify-center'>
                 <PhoneIcon className='text-[#AB0AF7] h-7 w-7 animate-pulse'/>
                 <p className='text-2xl'>+123456789</p>
                 </div>
 
-                <div className='flex items-center space-x-5 justify-center'>
+                <div className='flex items-center space-x-3 justify-center'>
                 <EnvelopeIcon className='text-[#AB0AF7] h-7 w-7 animate-pulse'/>
                 <p className='text-2xl'>yousefabdelkhaleq@gmail.com</p>
                 </div>
 
-                <div className='flex items-center space-x-5 justify-center'>
+                <div className='flex items-center space-x-3 justify-center'>
                 <MapPinIcon className='text-[#AB0AF7] h-7 w-7 animate-pulse'/>
                 <p className='text-2xl'>Jacksonville, FL.</p>
                 </div>
             </div>
 
             <form onSubmit={handleSubmit(onSubmit)}className='flex flex-col space-y-2 w-fit mx-auto'>
-                <div className='flex space-x-2'>
+                <div className='flex space-x-1'>
                     <input {...register('name')} placeholder="Name" className='contactInput' type="text" />
                     <input {...register('email')} placeholder="Email" className='contactInput' type="email" />
                 </div>
