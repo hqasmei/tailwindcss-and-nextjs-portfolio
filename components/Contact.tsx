@@ -32,7 +32,7 @@ function Contact({}: Props) {
             <div className='space-y-10'>
                 <div className='flex items-center space-x-3 justify-center'>
                 <PhoneIcon className='text-[#AB0AF7] h-7 w-7 animate-pulse'/>
-                <p className='text-2xl'>+123456789</p>
+                <p className='text-2xl'>+9049626422</p>
                 </div>
 
                 <div className='flex items-center space-x-3 justify-center'>
