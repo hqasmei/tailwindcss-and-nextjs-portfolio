@@ -20,11 +20,11 @@ const projects = [
     github: "https://github.com/dewedeth/sanity-v3-blog-nextjs13"
    },
    {
-    name: "svelkit-ecommerce",
-    description: "A sample web shop using svelkit,nextjs and more cool stuff!",
-    image: "/svelkit.bmp",
-    link: "https://sveltekit-commerce-seven.vercel.app/",
-    github: "https://github.com/dewedeth/sveltekit-commerce",
+    name: "Chat-gpt-gen",
+    description: "A christmas gift generator using chatgpt API,nextjs and React",
+    image: "/christmas.png",
+    link: "https://chat-gpt-gift-gen.vercel.app",
+    github: "https://github.com/dewedeth/ChatGPT-gift-gen",
    },
    {
     name: "yariga-dashboard",
