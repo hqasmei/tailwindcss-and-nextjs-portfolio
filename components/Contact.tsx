@@ -42,7 +42,7 @@ function Contact({}: Props) {
 
                 <div className='flex items-center space-x-5 justify-center'>
                 <MapPinIcon className='text-[#AB0AF7] h-7 w-7 animate-pulse'/>
-                <p className='text-2xl'>123 Developer Lane, Jacksonville, FL.</p>
+                <p className='text-2xl'>Jacksonville, FL.</p>
                 </div>
             </div>
 
