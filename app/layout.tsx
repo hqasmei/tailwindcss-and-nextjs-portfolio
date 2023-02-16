@@ -3,6 +3,8 @@ import '../styles/globals.css';
 import Navbar from '@/components/Navbar';
 import { ThemeProvider } from "next-themes";
 import Footer from '@/components/Footer';
+import { AnalyticsWrapper } from '@/components/analytics';
+
 
 export default function RootLayout({
   children,
@@ -16,6 +18,7 @@ export default function RootLayout({
         <ThemeProvider enableSystem={true} attribute="class">
         <Navbar />
         {children}
+        <AnalyticsWrapper />
         <Footer />
         </ThemeProvider>
       </body>
