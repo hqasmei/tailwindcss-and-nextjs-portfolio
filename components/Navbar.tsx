@@ -9,6 +9,7 @@ import { IoMdMenu, IoMdClose } from "react-icons/io"
 const Navbar = () => {
     const { systemTheme, theme, setTheme } = useTheme()
     const [navbar, setNavbar] = useState(false)
+    const [mounted, setMounted] = useState(false)
     const currentTheme = theme === "system" ? systemTheme : theme
 
     interface NavItem {
@@ -33,10 +34,11 @@ const Navbar = () => {
     ]
 
     useEffect(() => {
-        setNavbar(true)
-    }, [])
+        setMounted(true);
+      }, []);
 
     const renderThemeChanger = () => {
+        if(!mounted) return null;
 
         if (currentTheme === "dark") {
             return (
