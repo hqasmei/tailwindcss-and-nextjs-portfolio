@@ -4,7 +4,6 @@ import { Link } from "react-scroll/modules"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
-import { usePathname } from "next/navigation"
 
 interface NavItem {
     label: string
@@ -26,8 +25,6 @@ const NAV_ITEMS: Array<NavItem> = [
     },
     
 ]
-
-
 
 const Navbar = () => {
     const { systemTheme, theme, setTheme } = useTheme()
