@@ -5,37 +5,62 @@ import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 
-interface NavItem {
-    label: string
-    page: string
-}
-
-const NAV_ITEMS: Array<NavItem> = [
-    {
-        label: "Home",
-        page: "home",
-    },
-    {
-        label: "About",
-        page: "about",
-    },
-    {
-        label: "Projects",
-        page: "projects",
-    },
-    
-]
 
 const Navbar = () => {
     const { systemTheme, theme, setTheme } = useTheme()
-    const currentTheme = theme === "system" ? systemTheme : theme
     const [navbar, setNavbar] = useState(false)
 
-    useEffect(() => {
-        setNavbar(true)},[])
+    interface NavItem {
+        label: string
+        page: string
+    }
 
-    if (!navbar){
-        return null
+    const NAV_ITEMS: Array<NavItem> = [
+        {
+            label: "Home",
+            page: "home",
+        },
+        {
+            label: "About",
+            page: "about",
+        },
+        {
+            label: "Projects",
+            page: "projects",
+        },
+
+    ]
+
+    useEffect(() => {
+        setNavbar(true)
+    }, [])
+
+    const renderThemeChanger = () => {
+        if (!navbar) {
+            return null
+        }
+
+        const currentTheme = theme === "system" ? systemTheme : theme
+
+        if (currentTheme === "dark") {
+            return (
+                <button
+                    onClick={() => setTheme("light")}
+                    className="bg-stone-800 p-2 rounded-xl"
+                >
+                    <RiSunLine size={25} color="white" />
+                </button>
+            )
+        } else {
+            return (
+                <button
+                    onClick={() => setTheme("dark")}
+                    className="bg-slate-100 p-2 rounded-xl"
+                >
+                    <RiMoonFill size={25} color="black" />
+                </button>
+            )
+        }
     }
 
     return (
@@ -73,21 +98,7 @@ const Navbar = () => {
                                     >{item.label}</Link>
                                 )
                             })}
-                            {currentTheme === "dark" ? (
-                                <button
-                                    onClick={() => setTheme("light")}
-                                    className="bg-stone-800 p-2 rounded-xl"
-                                >
-                                    <RiSunLine size={25} color="white" />
-                                </button>
-                            ) : (
-                                <button
-                                    onClick={() => setTheme("dark")}
-                                    className="bg-slate-100 p-2 rounded-xl"
-                                >
-                                    <RiMoonFill size={25} color="black"/>
-                                </button>
-                            )}
+                            {renderThemeChanger()}
                         </div>
                     </div>
                 </div>
