@@ -1,5 +1,7 @@
 import { Navbar } from '@/components/Navbar'
 import '../styles/globals.css'
+import 'tailwindcss/tailwind.css';
+
 
 export default function RootLayout({
   children,
