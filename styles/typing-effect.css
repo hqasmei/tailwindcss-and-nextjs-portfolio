@@ -1,0 +1,19 @@
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60%;
+    }
+  }
+  
+  .typing-effect {
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 2px hidden;
+    margin-right: 2px;
+    animation: typing 3s steps(20, end) infinite;
+    color: black;
+  }
+  

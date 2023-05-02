@@ -5,14 +5,16 @@ const skills = [
   { skill: "AWS" },
   { skill: "Bash" },
   { skill: "GitHub" },
+  { skill: "GitLab" },
   { skill: "Linux" },
   { skill: "Java" },
   { skill: "Python" },
+  { skill: "C++" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
-  
- 
+  { skill: "Docker" },
+  { skill: "Kubernetes" },
 ]
 
 const AboutSection = () => {
@@ -66,7 +68,7 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    className="bg-orange-200 px-4 py-2 mr-2 mt-2 text-black-500 rounded font-semibold hover:text-black hover:shadow-lg hover:text-2xl transition-none duration-500"
                   >
                     {item.skill}
                   </p>
@@ -74,7 +76,7 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/portfolioguy2.png"
+              src="/boyshield.png"
               alt=""
               width={325}
               height={325}

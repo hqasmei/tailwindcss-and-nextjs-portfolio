@@ -3,6 +3,8 @@ import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
+import ResumeDownloadButton from 'ResumeDownloadButton.js'
+import '../styles/typing-effect.css'
 
 const HeroSection = () => {
   return (
@@ -17,27 +19,42 @@ const HeroSection = () => {
             className="rounded-full shadow-2xl"
           />
         </div>
-        <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Tony!</h1>
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">
-              fresh graduate from UTAR{" "}
-            </span>
-            based in Perak, Malaysia. I love cloud and I am looking to explore more in this field.
+        <div className="md:mt-2 md:w-3/5 text-left">
+  <h1 className="text-4xl font-cursive font-bold mt-4 md:mt-0 md:text-4xl typing-effect">Hi, I&#39;m Tony!</h1>
+  <p className="italic text-lg mt-4 mb-6 md:text-2xl">
+    I&#39;m a{" "}
+    <span className="font-semibold text-teal-600">
+      fresh graduate from UTAR{" "}
+    </span>
+    based in Perak, Malaysia. I love cloud computing and I am looking to explore more in this field.
+  </p>
+  <Link
+    to="projects"
+    className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+    activeClass="active"
+    spy={true}
+    smooth={true}
+    offset={-100}
+    duration={500}
+  >
+    Projects 
+  </Link>
+  <a
+    href="/path/to/resume.pdf"
+    download
+    className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 ml-4"
+  >
+    Download CV
+  </a>
+  <p className="italic text-lg mt-4 mb-6 md:text-2xl">
+            <br/>
+            Contact me @
+            <br />
+            Phone: +(60)162763389
+            <br />
+            Email: lauskhuen3389@gmail.com
           </p>
-          <Link
-            to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link>
-        </div>
+</div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
         <Link
