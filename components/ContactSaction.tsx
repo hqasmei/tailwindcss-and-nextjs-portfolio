@@ -14,8 +14,8 @@ function ContactSaction() {
                     Contact
                     <hr className=' w-24 h-1 mx-auto bg-teal-500 border-0 rounded' />
                 </h1>
-                <div className='flex flex-col space-y-20 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10 ' >
-                    <div className=' md:w-1/2 rounded-xl shadow-xl '>
+                <div className='flex flex-col space-y-20 items-stretch justify-center align-top mt-14 md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10 ' >
+                    <div className=' md:w-1/2 rounded-xl '>
                         <div className="" >
                         <h2 className='text-3xl font-bold'>Ammar Eldik</h2>
                         <br />
