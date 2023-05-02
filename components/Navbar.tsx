@@ -4,8 +4,7 @@ import { useTheme } from "next-themes"
 import { Link } from 'react-scroll/modules'
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
-import { useRouter } from 'next/router'
-import Home from '@/app/page'
+
 
 
 
