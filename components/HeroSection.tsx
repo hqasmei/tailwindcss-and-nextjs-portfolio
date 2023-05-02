@@ -19,7 +19,9 @@ function HeroSection() {
                     <p className='text-lg mt-4 mb-6 md:text-xl'>
                         And I&#39;m A{" "}
                         <span className=' font-semibold text-teal-600'>Front-End Web Developer {" "}
-                        </span>With experience in React and React-related libraries and a zest for creating dynamic, user-friendly web applications.
+                        </span>
+                        <br />
+                        With experience in React and React-related libraries and a zest for creating dynamic, user-friendly web applications.
                     </p>
                     <div className=' flex flex-row items-center justify-center space-x-9 mb-1'>
                         <a
