@@ -11,6 +11,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#114B5F',
+        'secondary-dark': '#c1e1f8',
+        'secondary-light': '#456990',
+      },
+      backgroundImage: {
+        'gradient-dark': "linear-gradient(to bottom, #114b5f, #1c536b, #295a78, #366284, #456990)",
+        'gradient-light': "linear-gradient(to bottom, #ffffff, #f5f6fe, #e7eefd, #d6e7fb, #c1e1f8)",
+      },
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
         fadeIn: "fadeIn 1.5s",
