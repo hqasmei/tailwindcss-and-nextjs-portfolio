@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+  reverse_proxy:
+    image: nginx
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+
+  cache_store:
+    image: memcached
+    restart: always
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
