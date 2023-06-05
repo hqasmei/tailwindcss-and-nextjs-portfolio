@@ -8,11 +8,11 @@ import {
 
 const SocialMedia = () => {
   return (
-    <div className="flex flex-row space-x-2 mb-1">
+    <div className="flex flex-row justify-center md:justify-start space-x-2 mb-1">
       <a href="https://github.com/joanamcs" rel="noreferrer" target="_blank">
         <AiOutlineGithub
           className="hover:-translate-y-1 transition-transform cursor-pointer text-primary dark:text-neutral-100"
-          size={30}
+          size={35}
         />
       </a>
       <a
@@ -22,7 +22,7 @@ const SocialMedia = () => {
       >
         <AiOutlineTwitter
           className="hover:-translate-y-1 transition-transform cursor-pointer text-primary dark:text-neutral-100"
-          size={30}
+          size={35}
         />
       </a>
 
@@ -33,7 +33,7 @@ const SocialMedia = () => {
       >
         <AiOutlineLinkedin
           className="hover:-translate-y-1 transition-transform cursor-pointer text-primary dark:text-neutral-100"
-          size={30}
+          size={35}
         />
       </a>
     </div>

@@ -5,6 +5,7 @@ import SlideUp from "./SlideUp"
 import {BsGithub, BsArrowUpRightSquare} from "react-icons/bs"
 
 type Projects = {
+  id: string,
   name: string,
   description: string,
   image: string,
@@ -14,6 +15,7 @@ type Projects = {
 
 const projects: Array<Projects> = [
   {
+    id: 'wtx',
     name: "WTX",
     description:
       "Changing the way trucks are traded over the globe by simplifying the process while adding more security and efficiency.",
@@ -31,9 +33,9 @@ const ProjectsSection = () => {
       </h1>
 
       <div className="flex flex-col space-y-28">
-        {projects.map((project, idx) => {
+        {projects.map((project) => {
           return (
-            <div key={idx}>
+            <div key={project.id} className={'pb-8'}>
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
