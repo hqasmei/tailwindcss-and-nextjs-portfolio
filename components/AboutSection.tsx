@@ -6,13 +6,11 @@ const skills = [
   { skill: "CSS" },
   { skill: "JavaScript" },
   { skill: "TypeScript" },
-  { skill: "Python" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
   { skill: "Git" },
   { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
 ]
 
 const AboutSection = () => {
@@ -30,11 +28,7 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              最近プログラミングに情熱を注ぎ、知識を広げています。独学で学び、新たな開発に挑戦する準備が整いました。 目標は、より複雑なプロジェクトに取り組むことや他の言語をマスターすることです。技術の進歩に常に興味を持ち、新しい挑戦を追い求める自己駆動型のエンジニアです。<br /> ゲーム開発にも情熱を燃やし、ユーザーに驚きや喜びを提供する作品を創りたいと考えています。努力と毅然なる精神を持ちながら、常に成長を追求しています。将来の成功に向けて自己啓発を重ねながら、新たなチャンスと経験を歓迎します。これからも前進し、技術の限界に挑戦することを楽しみにしています。 🙂
             </p>
             <br />
             <p>
