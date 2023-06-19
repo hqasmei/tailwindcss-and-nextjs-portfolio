@@ -6,28 +6,36 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Kissa Cafe",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "This is a cafe landing page created with HTML and CSS.",
+    image: "/kisaa.png",
+    github: "https://github.com/nbvrivnf/kissa__cafe",
+    link: "https://nbvrivnf.github.io/kissa__cafe/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Fronted-Mentor-Challange",
+    description: "This is the solution I completed for a challenge on the website Frontend Mentor.",
+    image: "/fronted-end.png",
+    github: "https://vercel.com/nbvrivnf/fronted-mentor-challenge",
+    link: "https://fronted-mentor-challenge-pink.vercel.app/",
   },
   {
-    name: "Kator Family Photos",
+    name: "React Website",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "This site is the first website I created using React.",
+    image: "/grow-data.png",
+    github: "https://github.com/nbvrivnf/Project_React2",
+    link: "https://nbvrivnf.github.io/Project_React2/",
   },
+  {
+    name: "Profile ",
+    description:
+      "My first React portfolio site showcases my creativity, skills, and projects. It's beautifully designed, user-friendly, and responsive. Explore my achievements and get to know me better.",
+    image: "/react-portfolio.png",
+    github: "https://github.com/nbvrivnf/Personal-Portfolio",
+    link: "https://personal-portfolio-green-sigma.vercel.app/",
+  }
 ]
 
 const ProjectsSection = () => {
@@ -35,10 +43,10 @@ const ProjectsSection = () => {
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        <hr className="w-6 h-1 mx-auto my-4 bg-green-500 border-0 rounded"></hr>
       </h1>
 
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col space-y-28 md:pb-48">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
