@@ -84,14 +84,14 @@ export default function Navbar() {
                   onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiSunLine size={25} color="black" />
+                  <RiSunLine size={25} color="black"  className="animate-fadeIn"/>
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <RiMoonFill size={25} className="animate-fadeIn" />
                 </button>
               )}
             </div>
