@@ -44,8 +44,8 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I'm engaged in a diverse array of hobbies and passions that
-              consistently occupy my time. Whether it's reading, playing the
+              I&#39;m engaged in a diverse array of hobbies and passions that
+              consistently occupy my time. Whether it&#39;s reading, playing the
               guitar, traveling, or weightlifting, I have an ongoing enthusiasm
               for embracing novel experiences and continuously expanding my
               knowledge.
