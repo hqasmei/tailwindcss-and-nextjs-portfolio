@@ -38,7 +38,7 @@ const HeroSection = () => {
             >
               <AiOutlineLinkedin
                 color="white"
-                className="mr-2 mt-2 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 bg-gray-500 rounded shadow"
+                className=" hover:bg-gray-600 mr-2 mt-2 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 bg-gray-500 rounded shadow"
                 size={50}
               />
             </a>
