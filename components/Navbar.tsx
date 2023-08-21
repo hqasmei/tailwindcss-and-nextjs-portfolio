@@ -1,15 +1,20 @@
-"use client" // this is a client component
-import React from "react"
-import { useState } from "react"
-import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
-import { useTheme } from "next-themes"
-import { RiMoonFill, RiSunLine } from "react-icons/ri"
-import { IoMdMenu, IoMdClose } from "react-icons/io"
+"use client"; // this is a client component
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-scroll/modules";
+import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
+import {
+  RiMoonFill,
+  RiSunCloudyFill,
+  RiSunFill,
+  RiSunLine,
+} from "react-icons/ri";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItem {
-  label: string
-  page: string
+  label: string;
+  page: string;
 }
 
 const NAV_ITEMS: Array<NavItem> = [
@@ -25,13 +30,19 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
-]
+];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
-  const pathname = usePathname()
-  const [navbar, setNavbar] = useState(false)
+
+  const { systemTheme, theme, setTheme } = useTheme();
+  let currentTheme = theme === "system" ? systemTheme : theme;
+  const pathname = usePathname();
+  const [navbar, setNavbar] = useState(false);
+
+  useEffect(() => {
+    setTheme('light'); // Change theme when component mounts
+  }, []);
+
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
@@ -66,7 +77,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "cursor-pointer block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
                     }
                     activeClass="active"
                     spy={true}
@@ -77,21 +88,29 @@ export default function Navbar() {
                   >
                     {item.label}
                   </Link>
-                )
+                );
               })}
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiSunLine size={25} color="black"  className="animate-fadeIn"/>
+                  <RiSunFill
+                    size={25}
+                    color="black"
+                    className="animate-fadeIn"
+                  />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} className="animate-fadeIn" />
+                  <RiMoonFill
+                    size={25}
+                    color="black"
+                    className="animate-fadeIn"
+                  />
                 </button>
               )}
             </div>
@@ -99,5 +118,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }

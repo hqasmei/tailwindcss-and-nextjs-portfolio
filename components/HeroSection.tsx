@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 const HeroSection = () => {
   return (
@@ -29,20 +30,33 @@ const HeroSection = () => {
             based in Dallas, TX. Working towards creating software that makes
             life easier and more meaningful for everyone.
           </p>
-          <Link
-            to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link>
+          <div className=" flex flex-wrap flex-row justify-center z-10 md:justify-start px">
+          <a
+              href="https://www.linkedin.com/in/jamal-shoubaki/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineLinkedin
+                color="white"
+                className="mr-2 mt-2 hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 bg-gray-500 rounded shadow"
+                size={50}
+              />
+            </a>
+            <Link
+              to="projects"
+              className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="flex flex-row items-center text-center justify-center ">
+      <div className="cursor-pointer flex flex-row items-center text-center justify-center ">
         <Link
           to="about"
           activeClass="active"
