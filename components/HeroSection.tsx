@@ -43,6 +43,17 @@ const HeroSection = () => {
               />
             </a>
             <Link
+              to="experience"
+              className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Experience
+            </Link>
+            <Link
               to="projects"
               className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"
               activeClass="active"
