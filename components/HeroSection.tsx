@@ -38,10 +38,21 @@ const HeroSection = () => {
             >
               <AiOutlineLinkedin
                 color="white"
-                className="mr-2 mt-2 hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 bg-gray-500 rounded shadow"
+                className=" hover:bg-gray-600 mr-2 mt-2 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 bg-gray-500 rounded shadow"
                 size={50}
               />
             </a>
+            <Link
+              to="experience"
+              className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Experience
+            </Link>
             <Link
               to="projects"
               className="mr-2 mt-2 text-neutral-100 font-semibold px-6 py-3 bg-gray-500 rounded shadow hover:bg-gray-600 cursor-pointer"

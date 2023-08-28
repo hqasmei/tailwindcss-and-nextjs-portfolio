@@ -39,7 +39,7 @@ const AboutSection = () => {
             <br />
             <p>
               I graduated from University of Illinois at Chicago, 2019 with a BS
-              in Computer Engineering and have been working in the field ever
+              in Computer Science and have been working in the field ever
               since.
             </p>
             <br />
