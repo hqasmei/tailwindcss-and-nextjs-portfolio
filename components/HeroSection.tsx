@@ -12,7 +12,7 @@ const HeroSection = () => {
                 </div>
                 <div className='md:mt-2 md:w-3/5 flex flex-col items-center text-center'>
                     <h1 className='font-semibold text-4xl mt-6 md:text-7xl md:mt-0'>
-                        Hey, I'm Rehan.
+                        Hey, I&apos;m Rehan.
                     </h1>
                     <p className='text-lg mt-4 mb-6 md:text-2xl'>
                         I am a second-year Computer Engineering student at the University of Guelph.{" "}
