@@ -6,25 +6,22 @@ import SlideUp from './SlideUp'
 
 const projects = [
     {
-        name: "project 1",
-        description: "project 1",
-        image: "/cheeseslice.png",
-        github: "https://github.com/",
-        link: "https://www.foodincanada.com/features/say-cheese/",
+        name: "JavaFX Tasklist Manager",
+        description: "The JavaFX Tasklist Manager is a user-friendly task and to-do list manager built using Java Maven and JavaFX. This application offers a sleek and intuitive GUI designed to help users stay organized and on top of their tasks and projects with helpful sorting options.",
+        image: "/tasklist.png",
+        github: "https://github.com/UmForgotMyName/JavaTaskManager",
     },
     {
-        name: "project 2",
-        description: "project 2",
-        image: "/cheeseslice.png",
-        github: "https://github.com/",
-        link: "https://www.foodincanada.com/features/say-cheese/",
+        name: "LaserFiche Java File Manager",
+        description: "The LaserFiche Java File Manager is a powerful file management solution designed to simplify and optimize the way you organize, search, and manage your files. Leveraging a suite of advanced algorithms, including sorting and renaming, this tool offers users a near 90% reduction in the time wasted manually searching through files.",
+        image: "/laserfiche.jpg",
+        github: "https://github.com/UmForgotMyName/FileProcesser",
     },
     {
-        name: "project 3",
-        description: "project 3",
-        image: "/cheeseslice.png",
-        github: "https://github.com/",
-        link: "https://www.foodincanada.com/features/say-cheese/",
+        name: "Mechanical Wheelchair",
+        description: "During our Engineering Design 1 course, a team of six engineers collaborated to create an innovative mechanical wheelchair. In this project, a pivotal role was played in coding the microcomputer and wiring the circuits, contributing significantly to the successful outcome of the project.",
+        image: "/wheelchair.png",
+        github: "https://github.com/UmForgotMyName/MechanicalWheelchair",
     }
 ]
 
@@ -42,7 +39,7 @@ export const ProjectsSection = () => {
                             <SlideUp offset="-300px 0px -300px 0px">
                                 <div className='flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12'>
                                     <div className=' mt-8 md:w-1/2'>
-                                        <Link href={project.link} target='_blank'>
+                                        <Link href={project.github} target='_blank'>
                                             <Image
                                                 src={project.image}
                                                 alt=""
@@ -58,11 +55,6 @@ export const ProjectsSection = () => {
                                         <div className='flex flex-row align-bottom space-x-4'>
                                             <Link href={project.github} target='_blank'>
                                                 <BsGithub
-                                                    size={30}
-                                                    className='hover:-translate-y-1 transition-transform cursor-pointer' />
-                                            </Link>
-                                            <Link href={project.link} target='_blank'>
-                                                <BsArrowUpRightSquare
                                                     size={30}
                                                     className='hover:-translate-y-1 transition-transform cursor-pointer' />
                                             </Link>

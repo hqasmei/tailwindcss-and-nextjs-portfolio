@@ -3,15 +3,22 @@ import Image from "next/image"
 
 const skills = [
     { skill: "JavaScript" },
-    { skill: "TypeScript" },
     { skill: "Java" },
     { skill: "React" },
-    { skill: "Next.js" },
-    { skill: "Tailwind CSS" },
     { skill: "Git" },
-    { skill: "C" },
     { skill: "GitHub" },
-]
+    { skill: "C" },
+    { skill: "C#" },
+    { skill: "Python" },
+    { skill: "Solidworks" },
+    { skill: "AutoCAD" },
+    { skill: "CircuitMaker" },
+    { skill: "LTspice" },
+    { skill: "Xilinx ISE" },
+    { skill: "WireShark" },
+    { skill: "NMap" }
+];
+
 
 const AboutSection = () => {
     return (
@@ -22,8 +29,8 @@ const AboutSection = () => {
                     <hr className="w-6 h-1 mx-auto my-4 bg-red-600 border-0 rounded"></hr>
                 </h1>
                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-                    <div className="md:w-1/2 ">
-                        <h1 className="text-center text-2xl font-bold text-red-600 mb-6 md:text-left">
+                    <div className="md:w-1/2 text-lg">
+                        <h1 className="text-center text-3xl font-bold text-red-600 mb-6 md:text-left">
                             Get to know me!
                         </h1>
                         <p>
@@ -34,10 +41,10 @@ const AboutSection = () => {
                         </p>
                         <br />
                         <p>
-                            I enjoy playing video games and exploring nature.
-                            In the future, I hope to learn more about Blender
-                            and the Unity game engine as game development has
-                            always piqued my interest.
+                            I enjoy spending my time learning about cybersecurity and computer hardware.
+                            In the future, I hope to delve deeper into both fields exploring the exciting
+                            intersection where cybersecurity and computer hardware converge to create
+                            robust and secure technological solutions.
                         </p>
                         <br />
                         <p>
