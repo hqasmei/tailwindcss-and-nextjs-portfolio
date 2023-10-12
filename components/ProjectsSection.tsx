@@ -1,19 +1,29 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
+  {
+    name: "MuseAI",
+    description:
+      "MuseAI is a versatile Software as a Service (SaaS) application that brings together a curated set of powerful AI tools to unleash your creativity. Whether you're a developer, designer, or artist, MuseAI provides cutting-edge capabilities to generate code, images, 3-second short videos, and music clips. Say goodbye to creative blocks and welcome a new era of inspiration with MuseAI.",
+    image: "/images/MuseAI.png",
+    icon: "/icons/museAi.ico",
+    github: "https://github.com/JamShou/MuseAI",
+    link: "https://muse-ai.vercel.app/",
+  },
   {
     name: "Cloneify",
     description:
       "Cloneify is a web application that recreates the beloved features of the PC version of Spotify using Next.js, a powerful framework for building server-rendered React applications. With Cloneify, users can enjoy a familiar and immersive music streaming experience, similar to Spotify, right in their web browsers.",
-    image: "/cloneify.png",
+    image: "/images/cloneify.png",
+    icon: "/icons/Spot_icon.svg",
     github: "https://github.com/JamShou/Cloneify",
     link: "https://clone-ify.vercel.app/",
-  }
-]
+  },
+];
 
 const ProjectsSection = () => {
   return (
@@ -41,7 +51,21 @@ const ProjectsSection = () => {
                     </Link>
                   </div>
                   <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                    <div className="flex items-center mb-6">
+                      {/* Image */}
+                      <div className="mr-4">
+                        <Image
+                          src={project.icon}
+                          alt=""
+                          width={30}
+                          height={30}
+                          className="shadow-xl"
+                        />
+                      </div>
+
+                      {/* Project Name */}
+                      <h1 className="text-4xl font-bold">{project.name}</h1>
+                    </div>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
@@ -63,12 +87,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
