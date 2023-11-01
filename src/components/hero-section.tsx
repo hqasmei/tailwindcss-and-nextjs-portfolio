@@ -1,8 +1,8 @@
-"use client" // this is a client component
-import React from "react"
-import Image from "next/image"
+"use client"; // this is a client component
+import React from "react";
+import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll/modules";
-import { HiArrowDown } from "react-icons/hi"
+import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
   return (
@@ -51,11 +51,13 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <div>
+            <HiArrowDown size={35} className="animate-bounce" />
+          </div>
         </ScrollLink>
       </div>
     </section>
   );
-}
+};
 
-export default HeroSection
+export default HeroSection;
