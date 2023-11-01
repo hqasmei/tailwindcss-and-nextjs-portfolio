@@ -24,6 +24,7 @@
     "typescript": "^4.9.4"
   },
   "devDependencies": {
+    "@types/react": "18.0.27",
     "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
