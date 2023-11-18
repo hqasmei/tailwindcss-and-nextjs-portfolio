@@ -82,9 +82,10 @@ export default function Navbar() {
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
-                  className=" bg-slate-100 p-2 rounded-xl"
+                  className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiSunLine size={25} color="black" />
+                  <RiSunLine size={25} color="black"/>
+                  
                 </button>
               ) : (
                 <button
