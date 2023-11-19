@@ -6,35 +6,35 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Antrian UIM",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
+      "The UIM Queue is a web application designed to assist service officers in managing visitor queues for efficient service delivery. It also aids customers in obtaining queue numbers either online or on-site, ensuring a streamlined process for service.",
     image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+    github: "https://github.com/andibhayangkara/antrian-proposal",
+    // link: "https://thankfulthoughts.io/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
+    name: "Sistem Perpustakaan Berbasis WEB",
+    description: "The Web-Based Library System is an application designed to assist library staff in managing book data and facilitating the processes of book borrowing and returning.",
     image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    github: "https://github.com/andibhayangkara/Perpustakaan",
+    // link: "https://platoio.com/register",
   },
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  },
+  // {
+  //   name: "Kator Family Photos",
+  //   description:
+  //     "Kator Family Photos is a photos and video digitization service in the LA area.",
+  //   image: "/familyphotos.png",
+  //   github: "https://github.com/hqasmei/katorfamilyphotos",
+  //   // link: "https://katorfamilyphotos.com/",
+  // },
 ]
 
 const ProjectsSection = () => {
   return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
-        Projects
+        Project
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
-                    <Link href={project.link}>
+                    {/* <Link href={project.link}> */}
                       <Image
                         src={project.image}
                         alt=""
@@ -53,7 +53,7 @@ const ProjectsSection = () => {
                         height={1000}
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
-                    </Link>
+                    {/* </Link> */}
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
@@ -67,12 +67,12 @@ const ProjectsSection = () => {
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
+                      {/* <Link href={project.link} target="_blank"> */}
+                        {/* <BsArrowUpRightSquare
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                        /> */}
+                      {/* </Link> */}
                     </div>
                   </div>
                 </div>

@@ -2,17 +2,17 @@ import React from "react"
 import Image from "next/image"
 
 const skills = [
+  { skill: "Tropubleshooting" },
+  { skill: "Communication" },
+  { skill: "Problem-Solving" },
+  { skill: "Network Basic Configuration" },
+  
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "Python" },
-  { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
+  
+
+  
 ]
 
 const AboutSection = () => {
@@ -30,22 +30,21 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi, my name is Abang and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              <span className="font-bold">{" driven "}</span>  
+              IT Engineering based in Makassar, Indonesia.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+              I graduated from  Makassar Islamic University, Indonesia in 2022
+              with a Bachelor`s degree in Informatics Engineering.
             </p>
             <br />
             <p>
               I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
+              From learning about technology, reading, and playing sports.
               I am always seeking new experiences and love to keep myself
               engaged and learning new things.
             </p>
@@ -78,9 +77,9 @@ const AboutSection = () => {
             <Image
               src="/hero-image.png"
               alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
+              width={375}
+              height={375}
+              className="hidden md:block md:relative md:bottom-4 md:left-23 md:z-0"
             />
           </div>
         </div>
